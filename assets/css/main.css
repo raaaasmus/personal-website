@@ -1,0 +1,181 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+a {
+  color: #ff5d73;
+}
+
+.site {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto auto 20vh;
+}
+
+.landing {
+  background-color: #111111;
+  grid-column: 1/5;
+  text-align: center;
+  font-size: 225%;
+  color: #ffffff;
+  padding-bottom: 29.5%;
+}
+
+.landing img {
+  width: 10%;
+  height: auto;
+}
+
+.landing a {
+  padding-top: 3.5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 180%;
+  text-decoration: none;
+  color: #ffffff;
+  -o-transition:color .2s ease-out, background 2s ease-in;
+  -ms-transition:color .2s ease-out, background 2s ease-in;
+  -moz-transition:color .2s ease-out, background 2s ease-in;
+  -webkit-transition:color .2s ease-out, background 2s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:color .2s ease-out, background 2s ease-in;
+}
+
+.landing a:hover {color: #ff5d73;}
+.landing a:active {color: #ff5d73;}
+
+#content {
+  position: relative;
+  top: 18%;
+}
+
+.film {
+  background-color: #ffffff;
+  grid-column: 1/5;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.vo {
+  background-color: #ffffff;
+  grid-column: 1/5;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.web {
+  background-color: #ffffff;
+  grid-column: 1/5;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.web nav {
+  margin-bottom: 30px;
+}
+
+.web i {
+  padding-top: 3.5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 200%;
+  text-decoration: none;
+  color: #494949;
+  text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2);
+  -o-transition:color .2s ease-out, background 2s ease-in;
+  -ms-transition:color .2s ease-out, background 2s ease-in;
+  -moz-transition:color .2s ease-out, background 2s ease-in;
+  -webkit-transition:color .2s ease-out, background 2s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:color .2s ease-out, background 2s ease-in;
+}
+
+.web img {
+  max-width: 40%
+}
+
+.web i:hover {color: #ff5d73;}
+.web i:active {color: #ff5d73;}
+
+.footer {
+  background-color: #111111;
+  grid-column: 1/5;
+  text-align: center;
+}
+
+.footer button {
+  background-color: transparent;
+  color: #fff;
+  font-size: 250%;
+  padding: 10px 5%;
+  border-width: 3px;
+  border-radius: 3px;
+  border-color: #ff5d73;
+  border-style: solid;
+  position: relative;
+  top: 28%;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.2);
+  -o-transition:color .1s ease-out, background .1s ease-in;
+  -ms-transition:color .1s ease-out, background .1s ease-in;
+  -moz-transition:color .1s ease-out, background .1s ease-in;
+  -webkit-transition:color .1s ease-out, background .1s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:color .1s ease-out, background .1s ease-in;
+}
+
+.footer button:hover {
+  background-color: #ff5d73;
+  border-color: #ff5d73;
+}
+
+.footer button:active {
+  top: 28.8%;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  background-color: #f6f6f6;
+  box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.2);
+  max-width: 53%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 40px;
+  color: #494949;
+  border-radius: 2px;
+}
+
+.container h2 {
+  text-decoration: underline;
+}
+
+.container p, li {
+  text-align: left;
+}
+
+.mediaWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.mediaWrapper iframe {
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  border-radius: 6px;
+}
+
+.mediaWrapper img {
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  border-radius: 6px;
+}
