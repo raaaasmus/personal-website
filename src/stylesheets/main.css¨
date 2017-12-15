@@ -58,39 +58,17 @@ body {
     font-weight: 500; }
   body i, body em {
     font-style: italic; }
-  body h1, body h2, body h3 {
-    color: #333; }
-  body h1 {
-    font-size: 2rem; }
-  body h2 {
-    font-size: 1.5rem; }
-  body h3 {
-    font-size: 1.25rem; }
-  body p {
-    color: #444; }
 
 #header {
-  grid-column: span 7;
-  display: flex; }
-  #header nav {
-    align-self: center; }
-    #header nav a {
-      font-family: 'Roboto Mono', monospace;
-      text-decoration: none;
-      color: #222;
-      font-size: 1.5rem;
-      padding: 20px 10px;
-      margin: 30px 0; }
+  grid-column: 1/6; }
 
 #info {
   grid-column: 2/2; }
   #info img {
     width: 250px;
     border-radius: 50%; }
-  #info h2 {
-    font-family: 'Roboto Mono', monospace; }
 
 #page {
   grid-column: 3/6; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css%C2%A8.map */

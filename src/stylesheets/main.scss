@@ -1,0 +1,37 @@
+@import './components/_all';
+
+body {
+  background: $gwhite;
+  font-family: 'Roboto', sans-serif;
+  b, strong { font-weight: 500; }
+  i, em { font-style: italic; }
+  h1, h2, h3 { color: $darkgrey; }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  p { color: $grey; }
+}
+
+#header {
+  grid-column: span 7;
+  display: flex;
+  nav {
+    align-self: center;
+    a { font-family: 'Roboto Mono', monospace;
+          text-decoration: none;
+          color: #222;
+          font-size: 1.5rem;
+          padding: 20px 10px;
+          margin: 30px 0; }
+  }
+}
+
+#info {
+  grid-column: 2/2;
+  img { width: 250px; border-radius: 50%; }
+  h2 { font-family: 'Roboto Mono', monospace; }
+}
+
+#page {
+  grid-column: 3/6;
+}
