@@ -17,3 +17,7 @@
           &:hover { border-top: 2px solid $accent; } } }
   }
 }
+
+@media only screen and (max-width: 670px) {
+  #header { margin-bottom: 2px; }
+}
