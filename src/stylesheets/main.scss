@@ -1,7 +1,7 @@
 @import './components/_all';
 
 body {
-  background: $gwhite;
+  background: white;
   font-family: 'Roboto', sans-serif;
   b, strong { font-weight: 500; }
   i, em { font-style: italic; }
@@ -12,26 +12,21 @@ body {
   p { color: $grey; }
 }
 
-#header {
-  grid-column: span 7;
-  display: flex;
-  nav {
-    align-self: center;
-    a { font-family: 'Roboto Mono', monospace;
-          text-decoration: none;
-          color: #222;
-          font-size: 1.5rem;
-          padding: 20px 10px;
-          margin: 30px 0; }
-  }
-}
-
 #info {
+  margin: 0 8px;
   grid-column: 2/2;
-  img { width: 250px; border-radius: 50%; }
-  h2 { font-family: 'Roboto Mono', monospace; }
+  grid-row: 2;
+  background: $gwhite;
+  box-shadow: $shadow;
+  @include flex;
+  img { justify-content: center; align-self: center; width: 250px;
+            border-radius: 50%; padding: 20px 0; }
+  h2 { font-family: 'Rubik', sans-serif; }
 }
 
 #page {
+  margin: 0 8px;
   grid-column: 3/6;
+  background: $gwhite;
+  box-shadow: $shadow;
 }
