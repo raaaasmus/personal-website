@@ -2,7 +2,7 @@ body {
   background: #f1f3f5;
   display: grid;
   grid-template-columns: repeat(19, 1fr);
-  grid-template-rows: 70px 92.8vh;
+  grid-template-rows: 70px auto;
   margin: 0; }
 
 #header {
@@ -56,23 +56,31 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #555; }
-  #info #pinfo {
+  #info #hello {
     display: flex;
     flex-flow: row nowrap;
     align-items: center; }
-    #info #pinfo img {
+    #info #hello img {
       width: 225px;
       padding: 40px 20px 40px 40px; }
-    #info #pinfo .textcont {
+    #info #hello h1 {
       padding: 0 20px 0 0; }
-      #info #pinfo .textcont h1, #info #pinfo .textcont h3 {
-        position: relative; }
-      #info #pinfo .textcont h1 {
-        align-self: flex-start;
-        top: 8px; }
-      #info #pinfo .textcont h3 {
-        align-self: flex-end;
-        bottom: 8px; }
+  #info #aboutme {
+    width: 55%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    flex-flow: column nowrap; }
+    #info #aboutme #aboutp {
+      width: 75%; }
+      #info #aboutme #aboutp #kjell {
+        color: #0076be;
+        text-decoration: none; }
+    #info #aboutme h2, #info #aboutme p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      color: #444;
+      text-align: center; }
   #info #links {
     display: flex;
     flex-flow: row nowrap;
@@ -121,7 +129,7 @@ body {
 @media only screen and (max-width: 1200px) {
   #header, #info {
     grid-column: 1/20; } }
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 700px) {
   #headericon {
     display: none; }
 
@@ -136,14 +144,28 @@ body {
     #header nav a {
       padding: 0 10px; }
 
-  #info #pinfo .textcont {
-    padding: 0 15px; }
-    #info #pinfo .textcont h1 {
-      font-size: 1.75rem; }
-    #info #pinfo .textcont h3 {
-      font-size: 1.05rem; }
-  #info #pinfo img {
+  #info #hello h1 {
+    padding: 0 15px;
+    font-size: 1.75rem; }
+  #info #hello h3 {
+    font-size: 1.05rem; }
+  #info #hello img {
     width: 200px;
-    padding: 40px 15px 40px 15px; } }
+    padding: 40px 15px 40px 15px; }
+
+  #info #aboutme {
+    width: 90%; } }
+@media only screen and (max-width: 450px) {
+  #info #hello h1 {
+    padding: 0 5px;
+    font-size: 1.5rem; }
+  #info #hello img {
+    width: 160px; } }
+@media only screen and (max-width: 380px) {
+  #header nav a {
+    font-size: 1.5rem; }
+
+  #info #links {
+    width: 300px; } }
 
 /*# sourceMappingURL=main.css.map */

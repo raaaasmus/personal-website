@@ -5,7 +5,7 @@ body {
   background: $bg;
   display: grid;
   grid-template-columns: repeat(19, 1fr);
-  grid-template-rows: 70px 92.8vh;
+  grid-template-rows: 70px auto;
   margin: 0;
 }
 
@@ -44,18 +44,21 @@ body {
   padding: 0 0 20px 0;
   h1 { font-family: 'Ubuntu', sans-serif; font-weight: 400; font-size: 1.85rem; color: $text; }
   h3 { font-family: 'Roboto', sans-serif; font-weight: 300; color: $subtext; }
-  #pinfo {
+  #hello {
     @include flex;
-
     img { width: 225px; padding: 40px 20px 40px 40px; }
-    .textcont {
-      padding: 0 20px 0 0;
-      h1, h3 { position: relative; }
-      h1 { align-self: flex-start;
-              top: 8px; }
-      h3 { align-self: flex-end;
-              bottom: 8px; }
+    h1 { padding: 0 20px 0 0; }
+  }
+
+  #aboutme {
+    width: 55%;
+    @include flex;
+    flex-flow: column nowrap;
+    #aboutp {
+      width: 75%;
+      #kjell { color: #0076be; text-decoration: none; }
     }
+    h2, p { font-family: 'Roboto', sans-serif; font-weight: 400; color: $text; text-align: center; }
   }
 
   #links {
@@ -85,7 +88,7 @@ body {
   #header, #info { grid-column: 1/20; }
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 700px) {
   #headericon { display: none; }
   #twitter, #github, #linkedin { display: initial; }
   #info { #links { width: 350px; } }
@@ -95,8 +98,23 @@ body {
   #header {
     nav { padding: 0;
       a { padding: 0 10px; } } }
-  #info { #pinfo {
-    .textcont { padding: 0 15px;
-      h1 { font-size: 1.75rem; } h3 { font-size: 1.05rem; } }
-      img { width: 200px; padding: 40px 15px 40px 15px; } } }
+  #info { #hello {
+      h1 { padding: 0 15px; font-size: 1.75rem; }
+      h3 { font-size: 1.05rem; }
+      img { width: 200px; padding: 40px 15px 40px 15px; }
+    }
+  }
+  #info { #aboutme { width: 90%; } }
+}
+
+@media only screen and (max-width: 450px) {
+  #info { #hello {
+    h1 { padding: 0 5px; font-size: 1.5rem; }
+    img { width: 160px; }
+  } }
+}
+
+@media only screen and (max-width: 380px) {
+  #header { nav { a { font-size: 1.5rem; } } }
+  #info { #links { width: 300px; } }
 }
