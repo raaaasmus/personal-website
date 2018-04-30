@@ -70,7 +70,7 @@ body {
     display: flex;
     flex-flow: column; }
     #landing .landing-text h1, #landing .landing-text h2 {
-      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 500;
       color: white;
       text-shadow: 8px 9px 16px rgba(0, 0, 0, 0.1); }
@@ -84,14 +84,10 @@ body {
     filter: drop-shadow(8px 9px 16px rgba(0, 0, 0, 0.1)); }
 
 #main h1, #linkme h1 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 1.75rem;
   color: #444; }
-#main h3, #linkme h3 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #555; }
 
 #main {
   grid-row: 3;
