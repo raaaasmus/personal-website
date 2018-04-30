@@ -63,10 +63,6 @@ body {
     img { height: 250px; border-radius: 50%; filter: drop-shadow(8px 9px 16px rgba(#000000, 0.10)); }
 }
 
-#main {
-    height: 3000px;
-}
-
 #main, #linkme { 
     h1 { font-family: 'Ubuntu', sans-serif; font-weight: 500; font-size: 1.75rem; color: $text; }
     h3 { font-family: 'Roboto', sans-serif; font-weight: 300; color: $subtext; }
@@ -129,10 +125,11 @@ body {
 
 @media only screen and (max-width: 790px) {
     #header { .headernav { span { display: none; } } }
-    #landing, #pageheader { .landing-text { align-items: center; text-align: center; } }
     #main { flex-flow: column; align-items: center; }
     #linkme { align-items: center; }
     #footer { flex-flow: column-reverse; align-items: center; }
+    #headericon { display: none !important; }
+    #twitter, #github, #linkedin { display: initial; }
 }
 
 @media only screen and (max-width: 550px) {
