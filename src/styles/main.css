@@ -50,6 +50,8 @@ body {
         stroke: #ff701d; }
   #header #headericon {
     margin: 0 8px; }
+    #header #headericon:hover {
+      transform: scale(1.1); }
 
 #landing {
   grid-row: 2;
@@ -97,7 +99,8 @@ body {
   flex-flow: row nowrap;
   align-items: center;
   flex-flow: column;
-  padding: 0 0 20px 0; }
+  padding: 0 16px 20px 16px;
+  text-align: left; }
 
 #linkme {
   grid-row: 4;
@@ -122,29 +125,41 @@ body {
       font-size: 2.25rem;
       padding: 0 15px; }
     #linkme #links #twitter:hover {
-      color: #1da1f2; }
+      color: #1da1f2;
+      transform: scale(1.1); }
     #linkme #links #github:hover {
-      color: #5e237f; }
+      color: #5e237f;
+      transform: scale(1.1); }
     #linkme #links #linkedin:hover {
-      color: #007bb6; }
+      color: #007bb6;
+      transform: scale(1.1); }
     #linkme #links #discord:hover {
-      color: #7289da; }
+      color: #7289da;
+      transform: scale(1.1); }
     #linkme #links #reddit:hover {
-      color: #ff3f18; }
+      color: #ff3f18;
+      transform: scale(1.1); }
     #linkme #links #youtube:hover {
-      color: #ff0000; }
+      color: #ff0000;
+      transform: scale(1.1); }
     #linkme #links #twitch:hover {
-      color: #6441a4; }
+      color: #6441a4;
+      transform: scale(1.1); }
     #linkme #links #steam:hover {
-      color: #143d71; }
+      color: #143d71;
+      transform: scale(1.1); }
     #linkme #links #spotify:hover {
-      color: #18d860; }
+      color: #18d860;
+      transform: scale(1.1); }
     #linkme #links #npm:hover {
-      color: #cc3534; }
+      color: #cc3534;
+      transform: scale(1.1); }
     #linkme #links #medium:hover {
-      color: #14c767; }
+      color: #14c767;
+      transform: scale(1.1); }
     #linkme #links #instagram:hover {
-      color: #e1336c; }
+      color: #e1336c;
+      transform: scale(1.1); }
 
 #twitter, #github, #linkedin {
   display: none; }
