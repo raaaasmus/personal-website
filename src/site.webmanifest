@@ -13,8 +13,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ff701d",
-    "background_color": "#ff701d",
+    "theme_color": "#008eff",
+    "background_color": "#008eff",
     "start_url": "https://rasmusgerdin.com",
     "display": "standalone"
 }
