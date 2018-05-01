@@ -80,14 +80,26 @@ body {
     text-align: left;
     color: $text;
     p { font-size: 1.1rem; }
+    .splitsections {
+        transition: all .2s;
+        padding: 10px 20px;
+        p { font-family: 'Roboto', sans-serif; font-size: 1.1rem; line-height: 1.5rem; padding: 4px; }
+        r { border: 1px solid #999; }
+        flex: 1;
+        align-self: flex-start;
+        justify-content: center;
+    }
+    .skillsection { a:hover { text-decoration: underline; } }
+    #featuredw { padding-top: 32px; }
     .featured-work {
         display: flex;
         flex-flow: row wrap;
-        padding: 2em;
+        padding: 8px;
+        align-items: center;
+        justify-content: center;
         .work-link {
-            flex: 1 1 100%;
             display: inline-block;
-            margin: 15px;
+            margin: 16px;
             .work-link-wrapper {
                 display: flex;
                 flex-flow: column;
@@ -106,7 +118,8 @@ body {
                 }
                 .work-link-content {
                     background: white;
-                    padding: 16px;
+                    padding: 4px;
+                    h2 { font-weight: 400; font-size: 1.3rem; text-align: center; }
                 }
             }
         }
@@ -141,6 +154,13 @@ body {
         #instagram:hover { color: #d6249f; transform: scale(1.1); }
         .social { padding: 8px; }
     }
+    .madewith { color: #868e96; margin: 32px 16px 0 16px; }
+    .copy {
+        margin: 4px 16px 0 16px;
+        justify-content: flex-end;
+        font-size: .75rem; 
+        color: #797e83;
+      }
 }
 
 #twitter, #github, #linkedin { display: none; }

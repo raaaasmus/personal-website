@@ -18,13 +18,13 @@
         <meta property="og:title" content="Rasmus Gerdin">
         <meta property="og:description" content="Freelancing web designer, voice actor, audio engineer and filmmaker.">
         <meta property="og:url" content="https://rasmusgerdin.com">
-        <meta property="og:image" content="https://rasmusgerdin.com/src/img/rgerdin.png">
+        <meta property="og:image" content="https://rasmusgerdin.com/src/img/rlogo.png">
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:site" content="@raaaaaasmus"/>
         <meta name="twitter:creator" content="@raaaaaasmus"/>
         <meta name="twitter:title" content="Rasmus Gerdin"/>
         <meta name="twitter:description" content="Freelancing web designer, voice actor, audio engineer and filmmaker."/>
-        <meta name="twitter:image" content="https://rasmusgerdin.com/src/img/rgerdin.png"/>
+        <meta name="twitter:image" content="https://rasmusgerdin.com/src/img/rlogo.png"/>
         <meta name="twitter:image:alt" content="Portrait"/>
 
         <!-- Favicon -->
@@ -78,16 +78,38 @@
             </div>
         </div>
         <div id="main">
-            <h1>About me</h1>
-            <p>I'm Rasmus, a front-end web designer and node.js developer. I'm also a filmmaker, photographer, video editor, voice-over artist and audio engineer.</p>
+            <div class="aboutsection splitsections">
+                <h1>About me</h1>
+                <p>I'm Rasmus, a front-end web designer and node.js developer based in Stockholm, Sweden. I also do tons of other things, such as video and audio editing, photography and voice-over work.</p>
+            </div>
+            <div class="skillsection splitsections">
+                <h1>Skills</h1>
+                <p>I'm well versed with languages, libraries and tools such as <i class="fab fa-js-square" id="js"></i> JavaScript, <i class="fab fa-html5" id="html"></i> HTML, <i class="fab fa-sass" style="color: #cd679a"></i> <a href="https://sass-lang.com/" target="_blank" style="color: #cd679a">Sass</a> and <i class="fab fa-css3-alt"></i> CSS, <i class="fab fa-node-js" style="color: #669f64"></i> <a href="https://nodejs.org/" target="_blank" style="color: #669f64">Node.js</a> and <i class="fab fa-git-square" style="color: #f05030"></i> <a href="https://git-scm.com/" target="_blank" style="color: #f05030">Git</a>.</p>
+            </div>
             
-            <h1>Featured work</h1>
+            <h1 id="featuredw">Featured work</h1>
             <div class="featured-work">
-                <a class="work-link" href="https://www.chopbot.xyz/">
+                <a class="work-link" href="https://www.chopbot.xyz/" target="_blank">
                     <div class="work-link-wrapper">
-                        <img class="work-link-image" src="http://s3.envato.com/files/146426112/DSC_9745.jpg">
+                        <img class="work-link-image" src="src/img/chopbot.png">
                         <div class="work-link-content">
-                            <h3>ChopBot</h3>
+                            <h2>ChopBot</h2>
+                        </div>
+                    </div>
+                </a>
+                <a class="work-link" href="https://www.youtube.com/watch?v=_vtzGsCulyI" target="_blank">
+                    <div class="work-link-wrapper">
+                        <img class="work-link-image" src="src/img/barren.png">
+                        <div class="work-link-content">
+                            <h2>Barren</h2>
+                        </div>
+                    </div>
+                </a>
+                <a class="work-link" href="https://www.youtube.com/watch?v=STMCAWsdLe8" target="_blank">
+                    <div class="work-link-wrapper">
+                        <img class="work-link-image" src="src/img/consc.png">
+                        <div class="work-link-content">
+                            <h2>Consciousness, a video essay</h2>
                         </div>
                     </div>
                 </a>
@@ -108,6 +130,8 @@
                 <a id="medium" class="social" href="https://medium.com/@raaaasmus" target="_blank"><i class="fab fa-medium-m" data-fa-transform="shrink-6" data-fa-mask="fas fa-circle"></i></a>
                 <a id="instagram" class="social" href="https://www.instagram.com/rasmusgerdin_/" target="_blank"><i class="fab fa-instagram" data-fa-transform="shrink-6" data-fa-mask="fas fa-circle"></i></a>
             </div>
+            <p class="madewith">Made with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i> in Sweden.</i>
+            <p class="copy"><i class="far fa-copyright"></i> 2018 - Rasmus Gerdin</p>
         </div>
     </body>
     <script src="src/js/index.js"></script>
