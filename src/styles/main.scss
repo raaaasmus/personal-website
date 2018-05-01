@@ -2,6 +2,7 @@
 @import './_mixins';
 
 body {
+    font-family: 'Roboto', sans-serif;
     background: $bg;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -19,7 +20,6 @@ body {
     grid-row: 1;
     grid-column: 2/7;
     background: $header;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     @include flex;
     .headernav { padding: 0 20px; display: flex; margin: 0; }
@@ -60,14 +60,14 @@ body {
     .landing-text {
         display: flex;
         flex-flow: column;
-        h1, h2 { font-family: 'Roboto', sans-serif; font-weight: 500; color: white; text-shadow: 8px 9px 16px rgba(#000000, 0.10); }
+        h1, h2 { font-weight: 500; color: white; text-shadow: 8px 9px 16px rgba(#000000, 0.10); }
         h1 { font-size: 2.35rem; } h2 { font-size: 1.60rem; }
     }
     img { height: 250px; border-radius: 50%; filter: drop-shadow(8px 9px 16px rgba(#000000, 0.10)); }
 }
 
 #main, #footer { 
-    h1 { font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 1.75rem; }
+    h1 { font-weight: 500; font-size: 1.75rem; }
 }
 
 #main {
@@ -79,6 +79,38 @@ body {
     padding: 20px 16px 20px 16px;
     text-align: left;
     color: $text;
+    p { font-size: 1.1rem; }
+    .featured-work {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 2em;
+        .work-link {
+            flex: 1 1 100%;
+            display: inline-block;
+            margin: 15px;
+            .work-link-wrapper {
+                display: flex;
+                flex-flow: column;
+                transition: all .2s ease;
+                transform: translateY(0);
+                background: transparent;
+                box-shadow: 0 0 0 rgba(77,77,77,0);
+                &:hover { 
+                    transform: translateY(-2px);
+                    box-shadow: 0 8px 14px rgba(77, 77, 77, .1) 
+                }
+                .work-link-image {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+                .work-link-content {
+                    background: white;
+                    padding: 16px;
+                }
+            }
+        }
+    }
 }
 
 #footer {
@@ -89,7 +121,7 @@ body {
     flex-flow: column;
     padding: 20px 16px 20px 16px;
     justify-content: center;
-    h2 { color: white; font-family: 'Roboto', sans-serif; font-weight: 500; }
+    h2 { color: white; font-weight: 500; }
     #links {
         @include flex;
         flex-flow: row wrap;
@@ -102,7 +134,7 @@ body {
         #reddit:hover { color: #ff3f18; transform: scale(1.1); }
         #youtube:hover { color: #ff0000; transform: scale(1.1); }
         #twitch:hover { color: #744bc2; transform: scale(1.1); }
-        #steam:hover { color: #143d71; transform: scale(1.1); }
+        #steam:hover { color: #a6d2e4; transform: scale(1.1); }
         #spotify:hover { color: #18d860; transform: scale(1.1); }
         #npm:hover { color: #cc3534; transform: scale(1.1); }
         #medium:hover { color: #14c767; transform: scale(1.1); }
@@ -114,7 +146,7 @@ body {
 #twitter, #github, #linkedin { display: none; }
 
 @media only screen and (max-width: 1475px) {
-    #header, #landing, #pageheader, #main, #linkme, #footer { grid-column: 1/8; }
+    #header, #landing, #pageheader, #main, #footer { grid-column: 1/8; }
 }
 
 @media only screen and (max-width: 1100px) {
