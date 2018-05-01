@@ -1,5 +1,5 @@
-const toolTip = document.querySelectorAll('#discord');
-tippy(toolTip, {
+const discordTip = document.querySelectorAll('#discord');
+tippy(discordTip, {
     arrow: true,
     arrowType: 'small',
     animation: 'shift-away',
