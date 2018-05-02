@@ -120,6 +120,7 @@ body {
                     background: white;
                     padding: 4px;
                     h2 { font-weight: 400; font-size: 1.3rem; text-align: center; }
+                    p { text-align: center; }
                 }
             }
         }
@@ -196,4 +197,14 @@ body {
     }
     #landing { flex-flow: column-reverse; }
     #header { .headernav { padding: 0 4px; } }
+}
+
+.tippy-tooltip.rgerdin-theme,
+.tippy-tooltip.rgerdin-theme .tippy-backdrop {
+    width: 400px;
+    background: $header;
+    color: $text;
+    text-align: left;
+    box-shadow: 0 8px 14px rgba(77, 77, 77, .1);
+    border: 2px solid $bg;
 }

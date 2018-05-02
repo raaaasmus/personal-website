@@ -148,6 +148,8 @@ body {
             font-weight: 400;
             font-size: 1.3rem;
             text-align: center; }
+          #main .featured-work .work-link .work-link-wrapper .work-link-content p {
+            text-align: center; }
 
 #footer {
   grid-row: 4;
@@ -270,5 +272,13 @@ body {
 
   #header .headernav {
     padding: 0 4px; } }
+.tippy-tooltip.rgerdin-theme,
+.tippy-tooltip.rgerdin-theme .tippy-backdrop {
+  width: 400px;
+  background: #ffffff;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 8px 14px rgba(77, 77, 77, 0.1);
+  border: 2px solid #f1f3f5; }
 
 /*# sourceMappingURL=main.css.map */
