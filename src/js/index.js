@@ -15,7 +15,7 @@ tippy(thecodeTip, {
     interactiveBorder: 2,
     theme: 'rgerdin',
     html: document.querySelector('#thecodequote'),
-    animation: 'shift-away',
+    animation: 'perspective',
     placement: 'bottom',
     touchHold: true
 });
@@ -25,7 +25,7 @@ tippy(hhughesTip, {
     interactiveBorder: 2,
     theme: 'rgerdin',
     html: document.querySelector('#hhughesquote'),
-    animation: 'shift-away',
+    animation: 'perspective',
     placement: 'bottom',
     touchHold: true
 });

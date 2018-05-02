@@ -274,7 +274,7 @@ body {
     padding: 0 4px; } }
 .tippy-tooltip.rgerdin-theme,
 .tippy-tooltip.rgerdin-theme .tippy-backdrop {
-  width: 400px;
+  width: 380px;
   background: #ffffff;
   color: #333;
   text-align: left;
