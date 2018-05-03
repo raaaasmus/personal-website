@@ -135,7 +135,7 @@ body {
         background: transparent;
         box-shadow: 0 0 0 rgba(77, 77, 77, 0); }
         #main .featured-work .work-link .work-link-wrapper:hover {
-          transform: translateY(-2px);
+          transform: translateY(-3px);
           box-shadow: 0 8px 14px rgba(77, 77, 77, 0.1); }
         #main .featured-work .work-link .work-link-wrapper .work-link-image {
           display: block;
