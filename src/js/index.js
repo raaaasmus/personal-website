@@ -15,10 +15,14 @@ tippy(thecodeTip, {
     interactiveBorder: 2,
     theme: 'rgerdin',
     html: document.querySelector('#thecodequote'),
-    animation: 'perspective',
-    distance: 16,
+    animation: 'shift-away',
+    inertia: true,
+    duration: 200,
+    distance: 22,
     placement: 'top',
-    touchHold: true
+    touchHold: true,
+    arrow: true,
+    arrowTransform: 'scale(1.25)'
 });
 
 tippy(hhughesTip, {
@@ -26,8 +30,12 @@ tippy(hhughesTip, {
     interactiveBorder: 2,
     theme: 'rgerdin',
     html: document.querySelector('#hhughesquote'),
-    animation: 'perspective',
-    distance: 16,
+    animation: 'shift-away',
+    inertia: true,
+    duration: 200,
+    distance: 22,
     placement: 'top',
-    touchHold: true
+    touchHold: true,
+    arrow: true,
+    arrowTransform: 'scale(1.25)'
 });

@@ -282,7 +282,26 @@ body {
   background: #ffffff;
   color: #333;
   text-align: left;
-  box-shadow: 0 8px 14px rgba(77, 77, 77, 0.1);
-  border: 2px solid #f1f3f5; }
+  box-shadow: 0 8px 14px rgba(77, 77, 77, 0.1); }
+
+/* Right placement tooltip arrow (arrow will be on left side of tooltip) */
+.tippy-popper[x-placement^=right] .tippy-tooltip.rgerdin-theme .tippy-arrow {
+  border-right: 7px solid #ffffff;
+  /* your color here */ }
+
+/* Left placement tooltip arrow (arrow will be on right side of tooltip) */
+.tippy-popper[x-placement^=left] .tippy-tooltip.rgerdin-theme .tippy-arrow {
+  border-left: 7px solid #ffffff;
+  /* your color here */ }
+
+/* Top placement tooltip arrow (arrow will be on bottom side of tooltip) */
+.tippy-popper[x-placement^=top] .tippy-tooltip.rgerdin-theme .tippy-arrow {
+  border-top: 7px solid #ffffff;
+  /* your color here */ }
+
+/* Bottom placement tooltip arrow (arrow will be on top side of tooltip) */
+.tippy-popper[x-placement^=bottom] .tippy-tooltip.rgerdin-theme .tippy-arrow {
+  border-bottom: 7px solid #ffffff;
+  /* your color here */ }
 
 /*# sourceMappingURL=main.css.map */
