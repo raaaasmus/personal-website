@@ -42,7 +42,7 @@ body {
             &:hover { fill: $accent; stroke: $accent; }
         }
     }
-    #headericon { margin: 0 8px; &:hover { transform: scale(1.1); } }
+    #headericon { margin: 0 8px; transition: all .2s cubic-bezier(.175,.885,.32,1.275); &:hover { transform: scale(1.2); } }
 }
 
 #landing {
@@ -103,13 +103,17 @@ body {
             .work-link-wrapper {
                 display: flex;
                 flex-flow: column;
-                transition: all .2s ease;
+                transition: all .2s cubic-bezier(.175,.885,.32,1.275);
                 transform: translateY(0);
                 background: transparent;
                 box-shadow: 0 0 0 rgba(77,77,77,0);
                 &:hover { 
-                    transform: translateY(-3px);
-                    box-shadow: 0 8px 14px rgba(77, 77, 77, .1) 
+                    transform: translateY(-8px);
+                    box-shadow: 0 8px 14px rgba(77, 77, 77, .1);
+                }
+                &:active {
+                    transform: translateY(-4px);
+                    box-shadow: 0 6px 10px rgba(77, 77, 77, .1);
                 }
                 .work-link-image {
                     display: block;
@@ -140,19 +144,19 @@ body {
         @include flex;
         flex-flow: row wrap;
         justify-content: center;
-        a { transition: all .2s; color: #868e96; font-size: 2rem; padding: 0 15px; }
-        #discord:hover { color: #7289da; transform: scale(1.1); }
-        #twitter:hover { color: #1da1f2; transform: scale(1.1); }
-        #github:hover { color: #5e237f; transform: scale(1.1); }
-        #linkedin:hover { color: #007bb6; transform: scale(1.1); }
-        #reddit:hover { color: #ff3f18; transform: scale(1.1); }
-        #youtube:hover { color: #ff0000; transform: scale(1.1); }
-        #twitch:hover { color: #744bc2; transform: scale(1.1); }
-        #steam:hover { color: #a6d2e4; transform: scale(1.1); }
-        #spotify:hover { color: #18d860; transform: scale(1.1); }
-        #npm:hover { color: #cc3534; transform: scale(1.1); }
-        #medium:hover { color: #14c767; transform: scale(1.1); }
-        #instagram:hover { color: #d6249f; transform: scale(1.1); }
+        a { transition: all .2s cubic-bezier(.175,.885,.32,1.275); color: #868e96; font-size: 2rem; padding: 0 15px; }
+        #discord:hover { color: #7289da; transform: scale(1.2); }
+        #twitter:hover { color: #1da1f2; transform: scale(1.2); }
+        #github:hover { color: #5e237f; transform: scale(1.2); }
+        #linkedin:hover { color: #007bb6; transform: scale(1.2); }
+        #reddit:hover { color: #ff3f18; transform: scale(1.2); }
+        #youtube:hover { color: #ff0000; transform: scale(1.2); }
+        #twitch:hover { color: #744bc2; transform: scale(1.2); }
+        #steam:hover { color: #a6d2e4; transform: scale(1.2); }
+        #spotify:hover { color: #18d860; transform: scale(1.2); }
+        #npm:hover { color: #cc3534; transform: scale(1.2); }
+        #medium:hover { color: #14c767; transform: scale(1.2); }
+        #instagram:hover { color: #d6249f; transform: scale(1.2); }
         .social { padding: 8px; }
     }
     .madewith { color: #868e96; margin: 32px 16px 0 16px; }

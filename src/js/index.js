@@ -16,7 +16,8 @@ tippy(thecodeTip, {
     theme: 'rgerdin',
     html: document.querySelector('#thecodequote'),
     animation: 'perspective',
-    placement: 'bottom',
+    distance: 16,
+    placement: 'top',
     touchHold: true
 });
 
@@ -26,6 +27,7 @@ tippy(hhughesTip, {
     theme: 'rgerdin',
     html: document.querySelector('#hhughesquote'),
     animation: 'perspective',
-    placement: 'bottom',
+    distance: 16,
+    placement: 'top',
     touchHold: true
 });
