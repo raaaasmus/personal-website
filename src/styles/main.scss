@@ -210,24 +210,29 @@ body {
     color: $text;
     text-align: left;
     box-shadow: 0 8px 14px rgba(77, 77, 77, .1);
+    transition: all .2s cubic-bezier(.175,.885,.32,1.275);
 }
 
 /* Right placement tooltip arrow (arrow will be on left side of tooltip) */
 .tippy-popper[x-placement^=right] .tippy-tooltip.rgerdin-theme .tippy-arrow {
+    transition: all .2s cubic-bezier(.175,.885,.32,1.275);
     border-right: 7px solid $header; /* your color here */
 }
 
 /* Left placement tooltip arrow (arrow will be on right side of tooltip) */
 .tippy-popper[x-placement^=left] .tippy-tooltip.rgerdin-theme .tippy-arrow {
+    transition: all .2s cubic-bezier(.175,.885,.32,1.275);
     border-left: 7px solid $header; /* your color here */
 }
 
 /* Top placement tooltip arrow (arrow will be on bottom side of tooltip) */
 .tippy-popper[x-placement^=top] .tippy-tooltip.rgerdin-theme .tippy-arrow {
+    transition: all .2s cubic-bezier(.175,.885,.32,1.275);
     border-top: 7px solid $header; /* your color here */
 }
 
 /* Bottom placement tooltip arrow (arrow will be on top side of tooltip) */
 .tippy-popper[x-placement^=bottom] .tippy-tooltip.rgerdin-theme .tippy-arrow {
+    transition: all .2s cubic-bezier(.175,.885,.32,1.275);
     border-bottom: 7px solid $header; /* your color here */
 }
