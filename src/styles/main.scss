@@ -42,7 +42,7 @@ body {
             &:hover { fill: $accent; stroke: $accent; }
         }
     }
-    #headericon { margin: 0 8px; transition: all .2s cubic-bezier(.175,.885,.32,1.275); &:hover { transform: scale(1.2); } }
+    #headericon { margin: 0 8px; &:hover { transform: scale(1.2); } }
 }
 
 #landing {
