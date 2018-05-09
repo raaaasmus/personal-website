@@ -3,6 +3,7 @@ const thecodeTip = document.querySelectorAll('#thecode');
 const hhughesTip = document.querySelectorAll('#hhughes');
 
 tippy(discordTip, {
+    theme: 'discord',
     arrow: true,
     arrowType: 'small',
     animation: 'shift-away',

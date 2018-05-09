@@ -285,28 +285,43 @@ body {
   box-shadow: 0 8px 14px rgba(77, 77, 77, 0.1);
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
-/* Right placement tooltip arrow (arrow will be on left side of tooltip) */
 .tippy-popper[x-placement^=right] .tippy-tooltip.rgerdin-theme .tippy-arrow {
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border-right: 7px solid #ffffff;
-  /* your color here */ }
+  border-right: 7px solid #ffffff; }
 
-/* Left placement tooltip arrow (arrow will be on right side of tooltip) */
 .tippy-popper[x-placement^=left] .tippy-tooltip.rgerdin-theme .tippy-arrow {
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border-left: 7px solid #ffffff;
-  /* your color here */ }
+  border-left: 7px solid #ffffff; }
 
-/* Top placement tooltip arrow (arrow will be on bottom side of tooltip) */
 .tippy-popper[x-placement^=top] .tippy-tooltip.rgerdin-theme .tippy-arrow {
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border-top: 7px solid #ffffff;
-  /* your color here */ }
+  border-top: 7px solid #ffffff; }
 
-/* Bottom placement tooltip arrow (arrow will be on top side of tooltip) */
 .tippy-popper[x-placement^=bottom] .tippy-tooltip.rgerdin-theme .tippy-arrow {
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border-bottom: 7px solid #ffffff;
-  /* your color here */ }
+  border-bottom: 7px solid #ffffff; }
+
+.tippy-tooltip.discord-theme,
+.tippy-tooltip.discord-theme .tippy-backdrop {
+  background: #7289da;
+  color: white;
+  box-shadow: 0 8px 14px rgba(77, 77, 77, 0.1);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+.tippy-popper[x-placement^=right] .tippy-tooltip.discord-theme .tippy-arrow {
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-right: 7px solid #7289da; }
+
+.tippy-popper[x-placement^=left] .tippy-tooltip.discord-theme .tippy-arrow {
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-left: 7px solid #7289da; }
+
+.tippy-popper[x-placement^=top] .tippy-tooltip.discord-theme .tippy-arrow {
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-top: 7px solid #7289da; }
+
+.tippy-popper[x-placement^=bottom] .tippy-tooltip.discord-theme .tippy-arrow {
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-bottom: 7px solid #7289da; }
 
 /*# sourceMappingURL=main.css.map */
