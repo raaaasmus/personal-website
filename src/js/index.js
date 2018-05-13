@@ -8,7 +8,8 @@ tippy(discordTip, {
     arrowType: 'small',
     animation: 'shift-away',
     placement: 'left',
-    touchHold: true
+    touchHold: true,
+    duration: 200
 });
 
 tippy(thecodeTip, {
